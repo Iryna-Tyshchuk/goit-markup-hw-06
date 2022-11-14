@@ -645,6 +645,8 @@ body {
   min-height: 581px;
   background-color: var(--primary-white-color);
 
+  padding: 40px;
+
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -671,6 +673,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.close-btn:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .is-hidden {
@@ -704,4 +711,206 @@ body {
   transform: translateY(100%);
   transition: transform 300ms ease;
   overflow: auto;
+}
+
+/* HOMEWORK____6 */
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+
+  margin-bottom: 12px;
+}
+
+.modal-field {
+  margin-bottom: 10px;
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: transparent;
+  font-size: 14px;
+  color: #000000;
+  padding-left: 42px;
+}
+
+.modal-input:focus {
+  border-color: var(--accent-color);
+}
+
+.modal-input:focus + .input-icon {
+  fill: var(--accent-color);
+}
+
+.modal-input::placeholder,
+.modal-text::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+}
+
+.modal-input:not(:placeholder-shown):not(:focus):valid {
+  background-color: rgba(159, 245, 159, 0.418);
+}
+.modal-input:not(:placeholder-shown):not(:focus):invalid {
+  background-color: rgba(245, 159, 159, 0.418);
+}
+
+.modal-label {
+  font-size: 12px;
+  color: var(--primary-text-color);
+}
+
+.modal-label span {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.modal-field-coment {
+  margin-bottom: 20px;
+}
+
+.modal-text {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: transparent;
+  font-size: 14px;
+  color: #000;
+  padding: 12px 16px;
+  resize: none;
+}
+.modal-field-privacy {
+  margin-bottom: 30px;
+}
+
+.check-text {
+  font-size: 14px;
+  color: var(--primary-text-color);
+  display: flex;
+}
+
+.check-text span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #303030;
+  border-radius: 3px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.input-check:checked + .check-text span {
+  background-color: var(--accent-color);
+  border: transparent;
+  fill: var(--primary-white-color);
+}
+
+.input-check:focus + .check-text span {
+  border-color: var(--accent-color);
+}
+
+.send-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  letter-spacing: 0.06em;
+
+  color: var(--primary-white-color);
+  width: 200px;
+  height: 50px;
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  text-align: center;
+
+  margin-left: 122px;
+}
+
+.privacy-link {
+  color: var(--accent-color);
+  text-decoration-line: underline;
+  text-decoration-skip-ink: none;
+}
+
+.footer-singup {
+  box-sizing: content-box;
+  display: flex;
+  align-items: baseline;
+  margin-left: 93px;
+}
+
+.singup-label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+  padding-bottom: 20px;
+}
+
+.singup-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  letter-spacing: 0.06em;
+
+  color: var(--primary-white-color);
+  width: 200px;
+  height: 50px;
+
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 12px;
+}
+
+.singup-input {
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: transparent;
+  font-size: 14px;
+  color: #000000;
+  padding: 15px;
+  padding-left: 16px;
+}
+
+.singup-form {
+  display: block;
+}
+
+.singup-email {
+  margin-bottom: 20px;
 }
